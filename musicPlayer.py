@@ -2,8 +2,8 @@ import sys
 from PyQt4 import QtGui
 from pygame import mixer
 
-X = 50
-Y = 20
+X = 20
+Y = 10
 BUTTON_WIDTH = 80
 mixer.init()
 
@@ -14,12 +14,11 @@ def play():
 def stop():
     mixer.music.stop()
 
-def create_button(button_name, widget, button_count, function):
+def create_button(button_name, widget, button_count, function, line = 0):
     button = QtGui.QPushButton(widget)
     button.setText(button_name)
-    button.move(X + BUTTON_WIDTH * (button_count - 1), Y)
+    button.move(X + BUTTON_WIDTH * (button_count - 1), Y + (line*30))
     button.clicked.connect(function)
-
 
 def window():
    app = QtGui.QApplication(sys.argv)
@@ -27,8 +26,13 @@ def window():
    create_button("Play", widget, 1, play)
    create_button("Pause", widget, 2, stop)
    create_button("Stop", widget, 3, stop)
-   widget.setGeometry(100,100,400,50)
+   create_button("Back", widget, 1, stop, line=1)
+   create_button("Next", widget, 2, stop, line=1)
+   widget.setGeometry(100,100,290,300)
    widget.setWindowTitle("MusicPlayer")
+   list = QtGui.QListWidget(widget)
+   list.addItem('test')
+   list.move(X, Y + BUTTON_WIDTH)
    widget.show()
    sys.exit(app.exec_())
 
