@@ -17,6 +17,14 @@ def stop():
     mixer.music.stop()
 
 
+def pause():
+    mixer.music.pause()
+
+
+def backward():
+    mixer.music.
+
+
 def create_button(button_name, widget, button_count, functionality, line=0):
     button = QtGui.QPushButton(widget)
     button.setText(button_name)
@@ -28,11 +36,11 @@ def window():
     app = QtGui.QApplication(sys.argv)
     widget = QtGui.QWidget()
     create_button("Play", widget, 1, play)
-    create_button("Pause", widget, 2, stop)
+    create_button("Pause", widget, 2, pause)
     create_button("Stop", widget, 3, stop)
     create_button("Back", widget, 1, stop, line=1)
     create_button("Next", widget, 2, stop, line=1)
-    widget.setGeometry(100,100,290,300)
+    widget.setGeometry(100, 100, 290, 300)
     widget.setWindowTitle("MusicPlayer")
     playlist = QtGui.QListWidget(widget)
     playlist.addItem('test')

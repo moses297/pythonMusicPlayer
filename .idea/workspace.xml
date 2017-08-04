@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ada00f10-b6eb-4fe8-b509-a0a0e3f57b73" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musicPlayer.py" afterPath="$PROJECT_DIR$/musicPlayer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="musicPlayer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/musicPlayer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -180,8 +179,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/musicPlayer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
