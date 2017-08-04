@@ -17,11 +17,11 @@ def stop():
     mixer.music.stop()
 
 
-def create_button(button_name, widget, button_count, function, line = 0):
+def create_button(button_name, widget, button_count, functionality, line=0):
     button = QtGui.QPushButton(widget)
     button.setText(button_name)
     button.move(X + BUTTON_WIDTH * (button_count - 1), Y + (line*30))
-    button.clicked.connect(function)
+    button.clicked.connect(functionality)
 
 
 def window():
