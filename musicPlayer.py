@@ -6,7 +6,7 @@ X = 20
 Y = 10
 BUTTON_WIDTH = 80
 mixer.init()
-
+pausedMusic = True
 
 def play():
     mixer.music.load('test.mp3')
@@ -18,11 +18,16 @@ def stop():
 
 
 def pause():
-    mixer.music.pause()
+    global pausedMusic
+    if pausedMusic:
+        mixer.music.pause()
+    else:
+        mixer.music.unpause()
+    pausedMusic = not pausedMusic
 
 
 def backward():
-    mixer.music.
+    mixer.music.stop()
 
 
 def create_button(button_name, widget, button_count, functionality, line=0):
